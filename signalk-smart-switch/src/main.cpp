@@ -117,10 +117,8 @@ ReactESP app([]() {
 
   // Create the global SensESPApp() object.
   sensesp_app = builder.set_hostname(HOST_NAME)
-//                    ->set_sk_server("sk-server.local", 3000)
-//                    ->set_wifi("YOUR_WIFI_SSID", "YOUR_WIFI_PASSWORD")
-                    ->set_sk_server("192.168.0.147", 80)
-                    ->set_wifi("eSeaStreet", "rrrybgdts")
+                    ->set_sk_server("sk-server.local", 3000)
+                    ->set_wifi("YOUR_WIFI_SSID", "YOUR_WIFI_PASSWORD")
                     ->set_standard_sensors(StandardSensors::NONE)
                     ->get_app();
 
